@@ -1,5 +1,5 @@
 - name: 1er Playbook
-  hosts: all
+  hosts: serveur1
   remote_user: stagiaire
   tasks:
    - name: Ping
