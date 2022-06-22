@@ -1,0 +1,10 @@
+- name: 1er Playbook
+  hosts: all
+  remote_user: stagiaire
+  tasks:
+   - name: Ping
+     command: ping -c 1 141.95.214.230
+     register: test
+   - name: Réponse
+     debug:
+      var: test
